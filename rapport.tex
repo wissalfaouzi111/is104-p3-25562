@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{graphicx}
+\graphicspath{{img/}}
+
+%%%%%%%%%%%%%%%% Lengths %%%%%%%%%%%%%%%%
+\setlength{\textwidth}{15.5cm}
+\usepackage[a4paper, total={6in, 8.5in}]{geometry}
+
+%%%%%%%%%%%%%%%% Variables %%%%%%%%%%%%%%%%
+\def\projet{0}
+\def\titre{Compression d'image à travers la factorisation SVD}
+\def\groupe{0}
+\def\equipe{0}
+\def\responsible{Wissal Faouzi}
+\def\secretary{Prenom Nom}
+\def\others{Benjamin Chew, Yani haouchine}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%% Header %%%%%%%%%%%%%%%%
+\noindent\begin{minipage}{0.98\textwidth}
+  \vskip 0mm
+  \noindent
+  { \begin{tabular}{p{7.5cm}}
+      {\bfseries \sffamily
+        Projet \projet} \\
+      {\itshape \titre}
+    \end{tabular}}
+  \hfill
+  \fbox{\begin{tabular}{l}
+      {~\hfill \bfseries \sffamily Groupe \groupe\ - Equipe \equipe
+        \hfill~} \\[2mm]
+      Responsable : \responsible \\
+      Secrétaire : \secretary \\
+      Codeurs : \others
+    \end{tabular}}
+  \vskip 4mm ~
+
+  ~~~\parbox{0.95\textwidth}{\small \textit{Résumé~:} \sffamily Le but de ce projet consiste à programmer un algorithme permettant de faire de la compression d’images en utilisant des techniques matricielles basée sur la factorisation SVD. Ce type d’algorithme est à relier aux algorithmes de compression avec pertes, dont le plus connu est certainement l’algorithme de compression JPEG, lui-même basé usuellement sur la Discrete Cosine Transform (DCT), une transformation voisine de la transformée de Fourier discrète. }
+  \vskip 1mm ~
+\end{minipage}
+
+%%%%%%%%%%%%%%%% Main part %%%%%%%%%%%%%%%%
+\section{Partie 1} \label{part1}
+
+Test
+
+\section{Partie 2} \label{part2}
+
+\section{Partie 3} \label{part3}
+
+\section{Partie 4} \label{part4}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
